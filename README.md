@@ -20,6 +20,26 @@ flowchart LR
     I --> C
 ```
 
+## Road-scene demos
+
+### Reacquisition after bus occlusion (s164)
+
+[![Animated preview of reacquisition after bus occlusion in s164](docs/demos/road_bus_pass_s164.webp)](https://github.com/yuanbo6212/RIVER/releases/download/road-demos/road_bus_pass_s164.mp4)
+
+[Download MP4](https://github.com/yuanbo6212/RIVER/releases/download/road-demos/road_bus_pass_s164.mp4)
+
+### Reacquisition after bus occlusion (s239)
+
+[![Animated preview of reacquisition after bus occlusion in s239](docs/demos/road_bus_pass_s239.webp)](https://github.com/yuanbo6212/RIVER/releases/download/road-demos/road_bus_pass_s239.mp4)
+
+[Download MP4](https://github.com/yuanbo6212/RIVER/releases/download/road-demos/road_bus_pass_s239.mp4)
+
+### Reacquisition across two occlusions (s239)
+
+[![Animated preview of reacquisition across two occlusions in s239](docs/demos/road_two_occlusions_s239.webp)](https://github.com/yuanbo6212/RIVER/releases/download/road-demos/road_two_occlusions_s239.mp4)
+
+[Download MP4](https://github.com/yuanbo6212/RIVER/releases/download/road-demos/road_two_occlusions_s239.mp4)
+
 ## Quick start
 
 Use Python 3.10–3.12. The included example replays 18 recorded CARLA observations with their original candidate masks on CPU.
