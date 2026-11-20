@@ -1,0 +1,430 @@
+{
+  "schema": "river.e03.fixed_mode_representative.v1",
+  "scope": "fixed_two_mode_auxiliary_representative",
+  "mode_columns": {
+    "cheap": [
+      0,
+      1,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "deep": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  "fit_groups": [
+    "g005",
+    "g020",
+    "g024",
+    "g027",
+    "g050",
+    "g059",
+    "g075",
+    "g108",
+    "g109",
+    "g132",
+    "g134",
+    "g136"
+  ],
+  "development_validation_groups": [
+    "g171",
+    "g178",
+    "g182",
+    "g200",
+    "g219",
+    "g220",
+    "g226",
+    "g275"
+  ],
+  "modes": {
+    "cheap": {
+      "logistic": {
+        "mean": [
+          0.6026419406385535,
+          0.6071460463769722,
+          0.5351151194114359,
+          0.5264855378728578,
+          1.0,
+          0.49208001232414733,
+          1.0
+        ],
+        "scale": [
+          0.24905770232882232,
+          0.18730784326008576,
+          0.5619365952310685,
+          0.5648249658633355,
+          1.0,
+          0.3544960517079209,
+          1.0
+        ],
+        "coefficients": [
+          -4.0314786056431124,
+          6.354390167239395,
+          -1.827993324421572,
+          -1.481217255723508,
+          0.1344023893767154,
+          0.0,
+          0.3398544248261447,
+          0.0
+        ],
+        "columns": [
+          0,
+          1,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      "logistic_source_sha256": "21f51989a2cf2e59d080d07aa897f695530f2700e7e0c48bedbeec2c7fac1b9e",
+      "representative": {
+        "model_version": "river-appearance-uniform-representative-v1",
+        "feature_names": [
+          "frozen_candidate_class_probability_score"
+        ],
+        "bin_edges": [
+          [
+            0.0,
+            0.1,
+            0.2,
+            0.30000000000000004,
+            0.4,
+            0.5,
+            0.6000000000000001,
+            0.7000000000000001,
+            0.8,
+            0.9,
+            1.0
+          ]
+        ],
+        "histogram_pseudocount": 0.5,
+        "observation_definition": "one deterministic frozen class-probability score; not directly an exclusive association",
+        "target_bin_mass": [
+          0.000529287226534933,
+          0.00017642907551164433,
+          0.000529287226534933,
+          0.0029992942836979536,
+          0.007939308398023995,
+          0.013937896965419902,
+          0.018877911079745943,
+          0.03016937191249118,
+          0.05963302752293578,
+          0.8652081863091038
+        ],
+        "nuisance_bin_mass": [
+          0.9386977886977887,
+          0.009705159705159705,
+          0.005036855036855037,
+          0.008476658476658476,
+          0.0042997542997543,
+          0.0052825552825552825,
+          0.004791154791154792,
+          0.0028255528255528256,
+          0.004176904176904177,
+          0.016707616707616706
+        ],
+        "candidate_present_prior_q": 0.6548252719277945,
+        "expected_nuisance_count": 0.9409722222222222,
+        "metadata": {
+          "version": "river-appearance-uniform-representative-v1",
+          "data_id": "e03_fixed_mode_conversion_v1/cheap",
+          "data_kind": "development",
+          "fit_data_sha256": "73f2dd96d054d6d0fd596e4c4ec8bd141997d9e07f94a6ebce88a948bbd1fd85",
+          "fit_groups": [
+            "g005",
+            "g020",
+            "g024",
+            "g027",
+            "g050",
+            "g059",
+            "g075",
+            "g108",
+            "g109",
+            "g132",
+            "g134",
+            "g136"
+          ],
+          "validation_groups": [
+            "g171",
+            "g178",
+            "g182",
+            "g200",
+            "g219",
+            "g220",
+            "g226",
+            "g275"
+          ],
+          "reserved_groups": [
+            "g003",
+            "g007",
+            "g008",
+            "g010",
+            "g012",
+            "g014",
+            "g037",
+            "g042",
+            "g048",
+            "g077",
+            "g106",
+            "g122",
+            "g126",
+            "g128",
+            "g140",
+            "g145",
+            "g149",
+            "g187",
+            "g204",
+            "g209",
+            "g213",
+            "g277",
+            "g283"
+          ],
+          "reserved_source_sha256": "5badfe8712aab3cbaaadbb7ba0537068d8e618eca11d536ee682be67cbf5b133",
+          "fit_frames": 4320,
+          "fit_candidates": 6894,
+          "fit_target_match_frames": 2829,
+          "fit_duplicate_target_match_frames": 12,
+          "fit_physical_target_member_rows": 2841,
+          "fit_physical_non_target_rows": 4053,
+          "fit_physical_non_target_rate": 0.9381944444444444,
+          "fit_representative_effective_count": 2829.0,
+          "fit_nuisance_effective_count": 4065.0,
+          "q_beta_pseudocount": 0.5,
+          "q_definition": "P(at least one acceptable target proposal in an archived frame); not pD conditioned on visibility",
+          "target_weight": "1/k for each of k acceptable proposals; zero for non-targets",
+          "nuisance_weight": "1 minus representative weight; includes other target members, not physical clutter",
+          "assumptions": [
+            "Bernoulli auxiliary representative",
+            "independent Poisson nuisance count and iid nuisance scores",
+            "exchangeable score-only observations"
+          ],
+          "limitations": [
+            "detector duplicates and distractors can violate Poisson/iid assumptions",
+            "marginal archived exposure does not identify visibility-conditioned detection",
+            "no geometry, state, temporal dependence, causal action prediction or policy use"
+          ],
+          "policy_release": false,
+          "model_sha256": "68f1b796e827f5f7f13d7f7a842b0681eae8415be96a5b66c6586213e3f8cd12"
+        }
+      }
+    },
+    "deep": {
+      "logistic": {
+        "mean": [
+          0.6026419406385535,
+          0.6071460463769722,
+          0.6056566702686672,
+          0.71759444681378,
+          1.0,
+          0.5351151194114359,
+          0.5264855378728578,
+          1.0,
+          0.49208001232414733,
+          1.0
+        ],
+        "scale": [
+          0.24905770232882232,
+          0.18730784326008576,
+          0.12938619004816163,
+          0.11484422710930633,
+          1.0,
+          0.5619365952310685,
+          0.5648249658633355,
+          1.0,
+          0.3544960517079209,
+          1.0
+        ],
+        "coefficients": [
+          -3.5220946406341236,
+          6.04517850569707,
+          -1.9139311457852353,
+          0.2902178475512226,
+          0.5290761069129636,
+          0.0,
+          -1.7989888582677405,
+          0.46521566194452574,
+          0.0,
+          0.15853538936307424,
+          0.0
+        ],
+        "columns": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ]
+      },
+      "logistic_source_sha256": "f3728862529e8096f07b26ced7af8fff6ec8faa4420b19c38e43563066a91445",
+      "representative": {
+        "model_version": "river-appearance-uniform-representative-v1",
+        "feature_names": [
+          "frozen_candidate_class_probability_score"
+        ],
+        "bin_edges": [
+          [
+            0.0,
+            0.1,
+            0.2,
+            0.30000000000000004,
+            0.4,
+            0.5,
+            0.6000000000000001,
+            0.7000000000000001,
+            0.8,
+            0.9,
+            1.0
+          ]
+        ],
+        "histogram_pseudocount": 0.5,
+        "observation_definition": "one deterministic frozen class-probability score; not directly an exclusive association",
+        "target_bin_mass": [
+          0.000529287226534933,
+          0.0008821453775582216,
+          0.001587861679604799,
+          0.005822159491884263,
+          0.007586450247000706,
+          0.012879322512350036,
+          0.01958362738179252,
+          0.02734650670430487,
+          0.043048694424841216,
+          0.8807339449541285
+        ],
+        "nuisance_bin_mass": [
+          0.9367321867321867,
+          0.013636363636363636,
+          0.007248157248157248,
+          0.0074938574938574936,
+          0.002334152334152334,
+          0.005036855036855037,
+          0.0042997542997543,
+          0.0038083538083538084,
+          0.004176904176904177,
+          0.015233415233415233
+        ],
+        "candidate_present_prior_q": 0.6548252719277945,
+        "expected_nuisance_count": 0.9409722222222222,
+        "metadata": {
+          "version": "river-appearance-uniform-representative-v1",
+          "data_id": "e03_fixed_mode_conversion_v1/deep",
+          "data_kind": "development",
+          "fit_data_sha256": "06b0428e09dc4158446f1f267a09c3945c977f63fa38f71318baea2f902a91a1",
+          "fit_groups": [
+            "g005",
+            "g020",
+            "g024",
+            "g027",
+            "g050",
+            "g059",
+            "g075",
+            "g108",
+            "g109",
+            "g132",
+            "g134",
+            "g136"
+          ],
+          "validation_groups": [
+            "g171",
+            "g178",
+            "g182",
+            "g200",
+            "g219",
+            "g220",
+            "g226",
+            "g275"
+          ],
+          "reserved_groups": [
+            "g003",
+            "g007",
+            "g008",
+            "g010",
+            "g012",
+            "g014",
+            "g037",
+            "g042",
+            "g048",
+            "g077",
+            "g106",
+            "g122",
+            "g126",
+            "g128",
+            "g140",
+            "g145",
+            "g149",
+            "g187",
+            "g204",
+            "g209",
+            "g213",
+            "g277",
+            "g283"
+          ],
+          "reserved_source_sha256": "5badfe8712aab3cbaaadbb7ba0537068d8e618eca11d536ee682be67cbf5b133",
+          "fit_frames": 4320,
+          "fit_candidates": 6894,
+          "fit_target_match_frames": 2829,
+          "fit_duplicate_target_match_frames": 12,
+          "fit_physical_target_member_rows": 2841,
+          "fit_physical_non_target_rows": 4053,
+          "fit_physical_non_target_rate": 0.9381944444444444,
+          "fit_representative_effective_count": 2829.0,
+          "fit_nuisance_effective_count": 4065.0,
+          "q_beta_pseudocount": 0.5,
+          "q_definition": "P(at least one acceptable target proposal in an archived frame); not pD conditioned on visibility",
+          "target_weight": "1/k for each of k acceptable proposals; zero for non-targets",
+          "nuisance_weight": "1 minus representative weight; includes other target members, not physical clutter",
+          "assumptions": [
+            "Bernoulli auxiliary representative",
+            "independent Poisson nuisance count and iid nuisance scores",
+            "exchangeable score-only observations"
+          ],
+          "limitations": [
+            "detector duplicates and distractors can violate Poisson/iid assumptions",
+            "marginal archived exposure does not identify visibility-conditioned detection",
+            "no geometry, state, temporal dependence, causal action prediction or policy use"
+          ],
+          "policy_release": false,
+          "model_sha256": "0d302d4176140c4482f966d597a2120064e56224296adcf303301d037e1f5c84"
+        }
+      }
+    }
+  },
+  "source_sha256": {
+    "tools/fit_e03_mode_readout.py": "f847ce1ea2559d63b39b6112674f21abca4aa53c5bde0b88f09241bb47e3f206",
+    "src/river_e03_identity_readout.py": "d24d8fe74c5c78ffd0e78fb92824ad477fc79e815436088649ffde21e7c19c09",
+    "src/river_set_association.py": "705f9e42de92ad58129d0ed461b497c316d326e69bf635f5e66c520a3c4347f9",
+    "tools/fit_e01_designated_screen_v2.py": "d62eab3ddcc0d2622479f1c4caec74bfd45a596e61f05fc3514a65c2ecf4fb2f",
+    "src/river_calibration.py": "727910d2623c048791a765e8466245629c14ddab6ba31646e9c2a2c6fc663146",
+    "src/river_logistic.py": "de79aa6d3fdae78fabafe6c7626c14a4caf29a4cdeed3d8435e9a6ecd51f3261",
+    "docs/E03_MODE_READOUT_PROTOCOL_20261030.md": "d35b9f876f76a61b604ae5a15cc033e429317eafc305d11dfdec6a0955f06cda",
+    "docs/historical23_group_source.csv": "5badfe8712aab3cbaaadbb7ba0537068d8e618eca11d536ee682be67cbf5b133",
+    "artifacts/e01_designated_geometry_export_v2r1/protocol_before_labels.json": "ff5bbe121ccd809873c32fb73254477010149fcba1714a853d05632c32e1ef90",
+    "artifacts/e01_designated_geometry_export_v2r1/candidate_scores.csv": "d20e41d45a8ddb259d50f500ca26a7af7a487d861556d5f29503ab7134b47221",
+    "artifacts/e01_designated_geometry_export_v2r1/frame_exposure.csv": "41a8e8f4b8f9112067cde285f9017bd32eebc1bfd464a3edc442e797de3bc8ef",
+    "artifacts/e01_hsv_export_v1/candidate_scores.csv": "2a7778d6f0475d3bd5e2d2f24e27807609abf139caa135a85085f268966b9fa9",
+    "artifacts/e01_dinov3_export_v1/candidate_scores.csv": "ea603f746b7b11c2c7f92200cf30e0b8c12768327d675832549290ff01e352db",
+    "artifacts/e01_cheap_geometry_ablation_v1/cheap_hsv_geometry.npz": "21f51989a2cf2e59d080d07aa897f695530f2700e7e0c48bedbeec2c7fac1b9e",
+    "artifacts/e01_designated_candidate_screen_v2/joint_geometry_logistic.npz": "f3728862529e8096f07b26ced7af8fff6ec8faa4420b19c38e43563066a91445",
+    "artifacts/e01_cheap_geometry_ablation_v1/validation_predictions.csv": "6a0680ab74b651b783ac7da43f0bbae57e8411f2e9ddb890f1c88b2cb87b8bab",
+    "artifacts/e01_designated_candidate_screen_v2/validation_predictions.csv": "c10d88a3175246ab846fdc6800895773d7940304ccf3986eb1eb0570eec5afae"
+  },
+  "scientific_policy_release": false,
+  "allow_explicit_bounded_development": true
+}

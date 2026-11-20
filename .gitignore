@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+.env
+.env.*
+runs/
+outputs/
+*.jsonl
+weights/
+*.pt
+*.pth
+*.pem
+*.key
+.DS_Store

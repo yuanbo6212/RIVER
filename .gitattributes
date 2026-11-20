@@ -1,0 +1,4 @@
+* text=auto eol=lf
+artifacts/e01_designated_set_association_v2/model.json -text
+*.jpg binary
+*.npz binary
