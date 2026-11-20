@@ -4,21 +4,7 @@
 
 RIVER follows a designated vehicle through long occlusions and recovers its identity when visually similar vehicles reappear. It builds a reference from the first task box, refreshes object detections when the current evidence warrants it, and propagates candidate masks between detector calls. The identity readout can withhold a match. The controller uses fresh identity evidence to point the camera and otherwise continues a bounded search.
 
-```mermaid
-flowchart LR
-    A[First RGB frame and task box] --> E[Identity reference]
-    B[Current RGB and camera pose] --> C{Refresh detector?}
-    C -->|Refresh| D[YOLO segmentation]
-    C -->|Propagate| F[Lucas–Kanade mask transport]
-    D --> G[Current candidate set]
-    F --> G
-    G --> H[Identity readout]
-    E --> H
-    H --> I[Candidate or null]
-    I --> J[Timestamped delivery]
-    J --> K[Bounded camera action]
-    I --> C
-```
+[![RIVER system overview showing task-anchored identity evidence, budgeted detector refresh, candidate maintenance, and closed-loop action control](docs/river-system-overview.png)](docs/river-system-overview.png)
 
 ## Road-scene demos
 
